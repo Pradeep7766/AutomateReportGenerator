@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+python-dateutil
+fuzzywuzzy[speedup]      # for fuzzy column matching (optional)
+rapidfuzz               # alternative to fuzzywuzzy
+plotly
+openpyxl
+xlsxwriter
+python-pptx
+fpdf
+scikit-learn
+statsmodels             # for simple forecasting / seasonality
+prophet                 # optional: for advanced forecasting
