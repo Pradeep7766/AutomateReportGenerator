@@ -188,7 +188,11 @@ st.write(f"Data after filters: {len(df)} rows")
 report_tables = {}
 report_figures = []
 
+<<<<<<< HEAD
 #  Monthly Summary
+=======
+# 1️⃣ Monthly Summary
+>>>>>>> d06931866162494711ad34bece429b5272b1b49f
 st.subheader('Monthly Sales Summary')
 monthly = generate_monthly_summary(df, date_col, qty_col, price_col)
 st.dataframe(monthly)
@@ -204,7 +208,11 @@ plt.tight_layout()
 report_figures.append(f1)
 st.pyplot(f1)
 
+<<<<<<< HEAD
 #  Top Models
+=======
+# 2️⃣ Top Models
+>>>>>>> d06931866162494711ad34bece429b5272b1b49f
 st.subheader('Top Models by Units Sold')
 model_rank = generate_model_ranking(df, model_col, qty_col, price_col)
 st.dataframe(model_rank)
@@ -218,7 +226,11 @@ plt.tight_layout()
 report_figures.append(f2)
 st.pyplot(f2)
 
+<<<<<<< HEAD
 #  Fast/Slow Moving Models
+=======
+# 3️⃣ Fast/Slow Moving Models
+>>>>>>> d06931866162494711ad34bece429b5272b1b49f
 st.subheader('Fast / Slow Moving Models (Last 3 Months)')
 fs = fast_slow_moving(df, model_col, qty_col, date_col)
 st.dataframe(fs)
@@ -233,7 +245,11 @@ if not fs.empty:
     report_figures.append(f3)
     st.pyplot(f3)
 
+<<<<<<< HEAD
 #  Peak Periods
+=======
+# 4️⃣ Peak Periods
+>>>>>>> d06931866162494711ad34bece429b5272b1b49f
 st.subheader('Peak Sales Periods')
 freq = st.selectbox('Aggregation for peak detection', ('D','W','M'))
 peak = peak_sales_periods(df, date_col, qty_col, freq=freq)
@@ -248,7 +264,11 @@ plt.tight_layout()
 report_figures.append(f4)
 st.pyplot(f4)
 
+<<<<<<< HEAD
 #  AOV / ASP
+=======
+# 5️⃣ AOV / ASP
+>>>>>>> d06931866162494711ad34bece429b5272b1b49f
 st.subheader('Average Order Value (AOV)')
 df['order_value'] = df[price_col] * df[qty_col]
 aov = df.groupby(df[date_col].dt.to_period('M').dt.to_timestamp()).agg(
