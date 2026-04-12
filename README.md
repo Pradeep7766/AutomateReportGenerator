@@ -1,4 +1,4 @@
-Link: https://automatereportgenerator.streamlit.app/
+Link: https://salesreportgenerator.streamlit.app/
 
 # 📊 Advanced Business Report Generator
 
