@@ -1,0 +1,20 @@
+
+# Virtual Environment - NEVER include
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive
+.env
+credentials.json
